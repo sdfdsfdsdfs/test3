@@ -59,5 +59,16 @@ $items=list_items($dir);
 </ul>
 <?php endif; ?>
 </main>
+<script src="../js/tinymce/tinymce.min.js"></script>
+<script src="../js/ace/src-min/ace.js"></script>
+<script src="../js/ace/src-min/ext-textarea.js"></script>
+<script>
+tinymce.init({
+    selector: 'textarea[name=content]',
+    skin: 'oxide-dark',
+    content_css: 'dark',
+    height: 500
+});
+</script>
 </body>
 </html>
