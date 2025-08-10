@@ -1,0 +1,24 @@
+#minesweeper {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
+  gap: 2px;
+}
+.cell {
+  width: 30px;
+  height: 30px;
+  background: #4a5568;
+  color: #f7fafc;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+.cell.revealed {
+  background: #2d3748;
+  cursor: default;
+}
+.cell.flagged {
+  background: #e53e3e;
+}
